@@ -12,7 +12,7 @@ Installation and Requirements
 -----------------------------
 This library reuqires ChromePhp Library which can be found https://github.com/ccampbell/chromephp
 
-## Installation
+### Installation
 
 Add the files in your CodeIgniter libraries folder 
 
@@ -48,13 +48,13 @@ Once you have loaded the library, you can start using it to log messages to your
     
     // Same applies for other levels: debug, info (and warn)
     
-    $this->cichrome->log('debug', 'Logging an Debug message!');
+    $this->cichrome->log('debug', 'Logging a Debug message!');
     $this->cichrome->debug('Logging a Debug message!');
     
-    $this->cichrome->log('warn', 'Logging an Debug message!');
+    $this->cichrome->log('warn', 'Logging a Warning message!');
     $this->cichrome->warn('Logging a Warning message!');
     
-    $this->cichrome->log('info', 'Logging an Debug message!');
+    $this->cichrome->log('info', 'Logging an Info message!');
     $this->cichrome->info('Logging an Info message!');
     
 ### Note
