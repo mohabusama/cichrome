@@ -1,12 +1,14 @@
 Cichrome
 ========
 
-A CodeIgniter Library wrapper for Chrome Logger
+A CodeIgniter ChromePhp Library wrapper.
 
 Introduction
 ------------
 This is a simple CodeIgniter wrapper for Chrome Logger's (http://craig.is/writing/chrome-logger) ChromePhp Library (https://github.com/ccampbell/chromephp).
 The purpose is to integrate Chrome Logger (ChromePhp) with CodeIgniter's Log Configuration.
+
+Cichrome can be used to log server side CodeIgniter messages to *Chrome Console*, taking into consideration CodeIgniter's global Log Threshold.
 
 Installation and Requirements
 -----------------------------
@@ -14,7 +16,7 @@ This library reuqires ChromePhp Library which can be found https://github.com/cc
 
 ### Installation
 
-Add the files in your CodeIgniter libraries folder 
+Add the files in your CodeIgniter *libraries* folder 
 
 **application/libraries/Cichrome.php**
 
