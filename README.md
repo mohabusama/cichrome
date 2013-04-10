@@ -1,20 +1,22 @@
 Cichrome
 ========
 
-A CodeIgniter Library wrapper for Chrome Logger
+A CodeIgniter ChromePhp Library wrapper.
 
 Introduction
 ------------
 This is a simple CodeIgniter wrapper for Chrome Logger's (http://craig.is/writing/chrome-logger) ChromePhp Library (https://github.com/ccampbell/chromephp).
 The purpose is to integrate Chrome Logger (ChromePhp) with CodeIgniter's Log Configuration.
 
+Cichrome can be used to log server side CodeIgniter messages to *Chrome Console*, taking into consideration CodeIgniter's global Log Threshold.
+
 Installation and Requirements
 -----------------------------
 This library reuqires ChromePhp Library which can be found https://github.com/ccampbell/chromephp
 
-## Installation
+### Installation
 
-Add the files in your CodeIgniter libraries folder 
+Add the files in your CodeIgniter *libraries* folder 
 
 **application/libraries/Cichrome.php**
 
@@ -48,13 +50,13 @@ Once you have loaded the library, you can start using it to log messages to your
     
     // Same applies for other levels: debug, info (and warn)
     
-    $this->cichrome->log('debug', 'Logging an Debug message!');
+    $this->cichrome->log('debug', 'Logging a Debug message!');
     $this->cichrome->debug('Logging a Debug message!');
     
-    $this->cichrome->log('warn', 'Logging an Debug message!');
+    $this->cichrome->log('warn', 'Logging a Warning message!');
     $this->cichrome->warn('Logging a Warning message!');
     
-    $this->cichrome->log('info', 'Logging an Debug message!');
+    $this->cichrome->log('info', 'Logging an Info message!');
     $this->cichrome->info('Logging an Info message!');
     
 ### Note
