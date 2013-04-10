@@ -9,7 +9,7 @@ class Cichrome
 
     public function __construct()
     {
-        $this->ci = get_instance();
+        $this->ci = & get_instance();
         $this->log_threshold = $this->ci->config->item('log_threshold');
     }
 
