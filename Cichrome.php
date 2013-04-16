@@ -2,7 +2,7 @@
 
 if (!defined('BASEPATH')) exit('No direct script access allowed');
 
-include 'chromelog/ChromePhp.php';
+require_once 'chromelog/ChromePhp.php';
 
 class Cichrome
 {
@@ -44,6 +44,21 @@ class Cichrome
     public function info($message)
     {
         return $this->log('info', $message);
+    }
+
+    public function group($name=NULL)
+    {
+        ChromePhp::group($name);
+    }
+
+    public function groupCollapsed($name=NULL)
+    {
+        ChromePhp::groupCollapsed($name);
+    }
+
+    public function groupEnd($name=NULL)
+    {
+        ChromePhp::groupEnd($name);
     }
 
     private function get_log_level($level)
